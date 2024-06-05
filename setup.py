@@ -73,11 +73,11 @@ setup(
     python_requires='>=3.11',
     entry_points={
         'console_scripts': [
-            'typeinc-mini=typeinc-mini.main:main',
+            'typeinc-mini=typeinc_mini.main:main',
         ],
     },
     package_data={
-        'typeinc-mini': ['configurations/*', 'scores/*', 'wordlist.txt'],
+        'typeinc_mini': ['configurations/*', 'scores/*', 'wordlist.txt'],
     },
     include_package_data=True,
     classifiers=[   

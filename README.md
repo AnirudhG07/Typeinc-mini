@@ -129,7 +129,7 @@ To install this tool manually, you can `git clone` this repository in your direc
 
 ```bash
 cd /path/to/your/directory/
-git clone https://github.com/AnirudhG07/Typeinc
+git clone https://github.com/AnirudhG07/Typeinc-mini
 ```
 
 2. Run `setup.py` to set the tool
