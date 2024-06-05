@@ -13,11 +13,16 @@ _Please note:_ If your screen is still smaller in full screen mode than required
 
 # Previews/Screenshots
 
-TO BE ADDED
+
+https://github.com/AnirudhG07/Typeinc-mini/assets/146579014/4696e50a-971b-4055-9ebf-459e41770e52
+
+
+
+**Please Note**: Due to permission errors in Typeinc-mini to write to `scores.json` which stores your scores, you may initially need to run as mentioned in preview. We ensure no other code will be run apart from giving write permission to `scores.json`. You may see <a href="https://github.com/AnirudhG07/Typeinc-mini/blob/main/typeinc_mini/scores/highscore.py"> ensure_permissions()</a> function to look at the code. Thanks!
 
 # Features
 
-Tyepinc provide some a next level typing test experience sitting on your terminal.
+Tyepinc-mini provide some a next level typing test experience sitting on your terminal.
 
 ## 1. UI ![Static Badge](https://img.shields.io/badge/WATCH_ME-cyan)
 
