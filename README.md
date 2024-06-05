@@ -146,7 +146,7 @@ Now you should be able to run the tool using `typeinc-mini` in your terminal. Fe
 
 This tool doesn't require a lot of dependencies but you need some basic requirements like
 
-- python version >= 3.9
+- python version >= 3.11
 - curses library of python (Note: It will be automatically installed if you use the Pip Installation process)
 - For Windows, windows-curses and setuptools are needed.
 

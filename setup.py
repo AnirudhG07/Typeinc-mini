@@ -42,7 +42,7 @@ And you are good to go!
 - ncurses library
 - Other python libraries which will be installed automatically
 
-Visit the Github Repository for more details: https://github.com/AnirudhG07/Typeinc
+Visit the Github Repository for more details: https://github.com/AnirudhG07/Typeinc-mini
 
 # Version
 1.0.0
