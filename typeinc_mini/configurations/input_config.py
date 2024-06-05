@@ -28,33 +28,20 @@ def rule_box(stdscr):
     height, width = stdscr.getmaxyx()
 
     rule_text= """
-    The Typinc Test is not just a typing test! You will be graded
+    The Typinc-mini Test is miniature Typeinc! You will be graded
     on the following rules which you must follow:
     1) Number of words filled in should be between 1 and 1000.
     2) Press Enter without typing anything to set default value.
     3)* Difficulty level can be any number. Absolutely any!
-    Difficulty level is of the following formats:
-        - level <= 0 : Super Easy (Regular) (SE)
-        - 0 < level <= 2 : Easy (E)
-        - 2 < level <= 4 : Normal (N)
-        - 4 < level <= 6 : Hard (H)
-        - 6 < level <= 9 : Super Hard (SH)
-        - 9 < level <= 10 : Insane (I)
-        - 10 < level < 20 : Super Insane (SI)
-        - 20 <= level < 50: BRUH (X)
-        - 50 <= level < 100: SUPER BRUHH (X2)
-        - 100 <= level < 500: DAMNN BRUHHH!! (XX)
-        - 500 <= level < 1000: U ROCK BRUHHH! (XX2)
-        - 1000 <= level: GOD BRUH!!! (SXX)
     4) The screen at one time only fills limited words, more words
     will appear as soon as you finish typing the current screen. 
     5)* Don't play with arrow keys, it might mess up the test.
                     Press q and Enter to Exit
 """
     # Make a box below input_box displaying rules
-    start_y = height // 2 + 2
+    start_y = height // 2 + 1
     start_x = width // 2 - 27
-    help_box = curses.newwin(24, 71, start_y-5, start_x-1 ) # height, width, y, x
+    help_box = curses.newwin(12, 70, start_y-5, start_x-1 ) # height, width, y, x
     help_box.box()
     help_box.refresh()
     stdscr.addstr(start_y-5, start_x + 30, f"RULES", curses.color_pair(5) | curses.A_BOLD)
@@ -91,7 +78,7 @@ def input_box(stdscr):
     """
 
     # Calculate the start coordinates for the box
-    start_y = height // 2 - 9
+    start_y = height // 2 - 10
     start_x = width // 2 - 20
 
     # Print the Welcome_text

@@ -7,11 +7,12 @@ def setup_window(stdscr):
     curses.init_pair(3, curses.COLOR_WHITE, curses.COLOR_BLACK)
     curses.init_pair(4, curses.COLOR_CYAN, curses.COLOR_BLACK)
     curses.init_pair(5, curses.COLOR_YELLOW, curses.COLOR_BLACK)
-    start_y = 2  # 10 is half the height of the box
-    start_x = 17  # 20 is half the width of the box
+    start_y = 2 
+    start_x = 17  
     # Create a new window for the box
-    box_width=80
-    box_height=25
+    height, width = stdscr.getmaxyx()
+    box_width=width//2-2
+    box_height=height//2-2
     monitor_l2 = curses.newwin(box_height+1, box_width+2, start_y, start_x-1)
     win = curses.newwin(box_height, box_width, start_y, start_x)
 
@@ -20,10 +21,10 @@ def setup_window(stdscr):
     monitor_l2.refresh()
     win.box()
     title = "TERMINAL TYPING SPEED TEST"
-    win.addstr(start_y - 2, start_x + box_width // 3 - len(title)//2, title, curses.color_pair(5) | curses.A_BOLD)
+    win.addstr(start_y - 2, start_x + box_width // 3 - len(title)//2-3, title, curses.color_pair(5) | curses.A_BOLD)
     win.scrollok(True) # Enable scrolling
 
-    options = curses.newwin(13, 30, 10 , 130) # height, width, y, x
+    options = curses.newwin(13, 30, 7, box_width+3 + start_x -1) # height, width, y, x
     options.addstr(1, 10, f"OPTIONS", curses.color_pair(4) | curses.A_BOLD)
     options.addstr(2, 1, "="*30, curses.color_pair(1))
     options.addstr(3, 1, "> Press Ctrl C to exit", curses.color_pair(5))

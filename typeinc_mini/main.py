@@ -122,7 +122,6 @@ Note: Please run the program on full screen mode since the UI is designed for fu
                 print(f"An error occurred: {e}")
                 if "addwstr() returned ERR" in str(e):
                     print("Please run the program on full screen mode else you will keep getting this error.")
-                    print("If still this issue persists, too bad. Try running on some other computer. For most computer sizes, it should work fine.")
-                print("Exiting typeinc...")
+                    print("If still this issue persists, too bad. Try running on some other computer. Typeinc-mini is made for smaller sized computer. If the issue persists, please get a bigger screen! Thanks!")
             except KeyboardInterrupt:
                 print("Exiting typeinc... Keyboard Interrupt")

@@ -176,7 +176,7 @@ def result(win, diff,  total_words:int, total_chars:int, total_time:float, error
     win.addstr(9, 30, f' {difficulty}', curses.color_pair(2))
     win.addstr(10, 2, f'Grade')
     win.addstr(10, 30, f' {grade} {type_}', curses.color_pair(1))
-    win.addstr(11, 2, f'typeinc-mini Score')
+    win.addstr(11, 2, f'Typeinc Score')
     win.addstr(11, 30, f' {score(wpm, diff, accuracy)}', curses.color_pair(1))
     win.addstr(12, 15, f'Press q to exit', curses.color_pair(2))
     win.addstr(13, 1, '='*52, curses.color_pair(5) | curses.A_BOLD)

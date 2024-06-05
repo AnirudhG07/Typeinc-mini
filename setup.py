@@ -57,7 +57,7 @@ install_requires=[]
 
 if platform.system() == 'Windows':
     install_requires.append('windows-curses')
-install_requires.extend(['setuptools'])
+install_requires+=['setuptools', 'wheel', 'twine']
 
 setup(
     name='typeinc-mini',

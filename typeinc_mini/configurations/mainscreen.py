@@ -151,8 +151,11 @@ def typer(stdscr, test_text, total_time, tbc):
                     cursor_y += 1  # Move to the next line
                     win.refresh()
         ### TIMER ##
+        height, width = stdscr.getmaxyx()
+        box_width=width//2-2
+        box_height=height//2-2
         initial_time = time.time()
-        stdscr.addstr(21, 138, f"{round(initial_time - start_time, 2)} seconds", curses.color_pair(5))
+        stdscr.addstr(11 + 7, box_width + 19 +8, f"{round(initial_time - start_time, 2)} seconds", curses.color_pair(5))
         stdscr.refresh()
 
             # Refresh the window to show the output
