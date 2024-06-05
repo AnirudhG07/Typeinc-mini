@@ -1,3 +1,5 @@
 build/lib/typeinc
 dist
 typeinc.egg-info
+build/lib/typeinc_mini
+typeinc_mini.egg-info
