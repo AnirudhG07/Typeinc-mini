@@ -52,9 +52,9 @@ Here is a detailed summary of the Difficulty level division.
 All the difficulties levels are set by me, including the names. This test is a total 'BRUHHH'!<br>
 For example-
 <br>
-<img width="940" alt="higher_diff_txt-img" src="https://github.com/AnirudhG07/Typeinc-mini/assets/146579014/72be858b-554a-44ce-830f-f12931233850">
+<img width="725" alt="higher_diff_img" src="https://github.com/AnirudhG07/Typeinc-mini/assets/146579014/051faa70-d734-4eed-a322-be75b05a3671">
 
-This is an example of 50 word test-text at difficulty level = 20. (It may differ for you).
+This is an example of 50 word test-text at difficulty level = 20. (It may differ for you). You see the `. . .` to explain 50 words coudn't fit here, since the screen is smaller than `Typeinc Original`, hence you will get another screen as you complete typing this screen.
 
 **Note:** If you want to have the regular typing test, please enter without mentioning any difficulty level since Default Difficulty is set to 0.
 
