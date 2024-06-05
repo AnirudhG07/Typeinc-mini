@@ -37,7 +37,7 @@ def getsetgo(stdscr):
             name = input("Enter your name: ")
             store_complete = store_result(name, wpm, grade, type_, difficulty, score) # difficulty is string
             if store_complete:
-                print("Your score is saved. To see the top 10 scores, run `typeinc -r <difficulty level>`")
+                print("Your score is saved. To see the top 5 scores, run `typeinc-mini -r <difficulty level>`")
                 print("Thank you for playing!")
             else:
                 print("Some error occured while saving the score. Please try again.")

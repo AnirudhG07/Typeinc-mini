@@ -1,9 +1,24 @@
-import json
+import json, os, stat
 import datetime
 import curses
 import bisect
 import pkg_resources
+
+def ensure_permissions():
+    filepath = pkg_resources.resource_filename(__name__, 'scores.json')
+    try:        
+        if not os.access(filepath, os.W_OK):
+            # Change the permissions to make it readable and writable by anyone
+            os.chmod(filepath, stat.S_IROTH | stat.S_IWOTH | stat.S_IRUSR | stat.S_IWUSR | stat.S_IRGRP | stat.S_IWGRP)
+    except PermissionError as e:
+        print("Permission error: ", e)
+        print("  ")
+        print("Sorry for the inconvenience. Please run the program with sudo, or as an administrator. We ensure safety and no malicious codes will be run.")
+        print("You need not the program as administrator after this one time. ")
+        print("If you are still facing issues, please raise an issue on the official Github page.")
+
 def store_result(name, wpm, grade, type_, difficulty, new_score):
+    ensure_permissions()
     time_exact = datetime.datetime.now().isoformat()
 
     # Create the result dictionary
@@ -45,8 +60,6 @@ def store_result(name, wpm, grade, type_, difficulty, new_score):
             return True
     except Exception as e:
             print(f"Error dumping scores. Error: {e}.")
-            if "Permission" in str(e):
-                print("Try running the program with sudo, or as an administrator.")
     return False
 
 
