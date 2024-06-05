@@ -68,7 +68,7 @@ Note: Please run the program on full screen mode since the UI is designed for fu
 
         parser.add_argument('-s', '--score', default=None, action='store_true', help='Calculate hypothetical score for input figures.')
         parser.add_argument('-w', '--words', type=int, help='Get random English words from our wordlist. Max 7500')
-        parser.add_argument('-r', '--ranklist', type=str, default=None, help='Display the top 10 scores for input difficulty level.')
+        parser.add_argument('-r', '--ranklist', type=str, default=None, help='Display the top 5 scores for input difficulty level.')
         
         args = parser.parse_args()
 
@@ -122,6 +122,6 @@ Note: Please run the program on full screen mode since the UI is designed for fu
                 print(f"An error occurred: {e}")
                 if "addwstr() returned ERR" in str(e):
                     print("Please run the program on full screen mode else you will keep getting this error.")
-                    print("If still this issue persists, too bad. Try running on some other computer. Typeinc-mini is made for smaller sized computer. If the issue persists, please get a bigger screen! Thanks!")
+                    print("If still this issue persists, too bad. We provide 2 solutions which you can try-\n\n1. Try increasing number of lines in terminal, but decreasing font size or similar.\n2. Try running on some other computer.\n Typeinc-mini is made for smaller sized computer. If the issue persists, please get a bigger screen bruh! Thanks!")
             except KeyboardInterrupt:
                 print("Exiting typeinc... Keyboard Interrupt")

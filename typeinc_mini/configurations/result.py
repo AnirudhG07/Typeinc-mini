@@ -150,7 +150,7 @@ def result(win, diff,  total_words:int, total_chars:int, total_time:float, error
     height, width = win.getmaxyx()
 
     # Calculate the position of the box and the text
-    start_y = height // 2 -5
+    start_y = height // 2 -10
     start_x = width // 2 
 
     # Create a new window for the box
