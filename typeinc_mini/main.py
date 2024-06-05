@@ -56,15 +56,15 @@ def getsetgo(stdscr):
             print("Invalid input. Please re enter with (y/n)")
 
 def main():
-        parser = argparse.ArgumentParser(description="""Typing Speed Test- Typeinc. A cool ncurses based typing test.
+        parser = argparse.ArgumentParser(description="""Typing Speed Test- Typeinc-mini. A miniature version of Typeinc, a cool ncurses based typing test.
 Set your own difficulty level and test the abilities of your typing skills.
-For more information, visit official Github Page: https://github.come/AnirudhG07/Typeinc
+For more information, visit official Github Page: https://github.come/AnirudhG07/Typeinc-mini
 Note: Please run the program on full screen mode since the UI is designed for full screen.
 
     ~ BE THE FASTEST TYPAA YOU COULD EVER BE ~""",
                                         formatter_class=argparse.RawTextHelpFormatter)
         # Add the flags
-        parser.add_argument('-v', '--version', action='version', version='Typeinc - version 1.0.0', help = "Show the version of the program.")
+        parser.add_argument('-v', '--version', action='version', version='Typeinc-mini - version 1.0.0', help = "Show the version of the program.")
 
         parser.add_argument('-s', '--score', default=None, action='store_true', help='Calculate hypothetical score for input figures.')
         parser.add_argument('-w', '--words', type=int, help='Get random English words from our wordlist. Max 7500')
