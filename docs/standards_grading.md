@@ -1,3 +1,6 @@
+# Typeinc-mini Grades and Scoring Standards
+Typeinc-mini follows the same rules and regulation as Typeinc. The below are the rules set by Typeinc, which will as it is be followed by Typeinc-mini
+
 # Calculation of WPM
 
 Typeinc follows Character based Formula:

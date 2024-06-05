@@ -1,18 +1,19 @@
-# Typeinc ![Static Badge](https://img.shields.io/badge/version-1.0.0-red) ![Static Badge](https://img.shields.io/badge/Typing_Test-CHECK_IT-blue)
+# Typeinc-mini ![Static Badge](https://img.shields.io/badge/version-1.0.0-red) ![Static Badge](https://img.shields.io/badge/Typing_Test-CHECK_IT-blue)
 
-Typeinc (pronounced `type-in-c`), a python & _ncurses_ based tool, is your goto terminal tool to play around with your typing speed with various difficulty levels.
-You get an amazing UI for typing keyboard giving you a feel of both typewriters and keyboards. Both humans and robots can get their typing speed, don't worry robots won't break the limits set here.
+Typeinc-mini, is a miniature version of Typeinc. Same features but less UI (you don't get the Typeinc-keyboard :<). This is made for those who do not have a big enough screen and see the message - <br>
+`...If still the issue persists, too bad.`<br>
+
+I certainly don't want people to not feel left-out due to their smaller screen.
+_Please note:_ If your screen is still smaller in full screen mode than required, just buy a NEW-ONE bruh!!! 
 <br>
 
 <p align="center">
   <img src="https://media2.giphy.com/media/ule4vhcY1xEKQ/200w.gif?cid=6c09b952li35zp64s3iz0l9u482nurwqbtz49iv8hod95ox0&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Funny GIF">
 </p>
 
-Typeinc has nothing to with C, although pronounced so. It's like `type-i-nc` meaning type-type, I-user(you), nc-ncurses, OR maybe `type-inc` (Typing Incorporation), honestly I donno. Make out whatever you want _bruh!_
-
 # Previews/Screenshots
 
-https://github.com/AnirudhG07/Typeinc/assets/146579014/f7684d4e-1844-4f6a-ad66-3549dfd2043f
+TO BE ADDED
 
 # Features
 
@@ -21,7 +22,10 @@ Tyepinc provide some a next level typing test experience sitting on your termina
 ## 1. UI ![Static Badge](https://img.shields.io/badge/WATCH_ME-cyan)
 
 This terminal software provides a user-friendly UI with easy interactions, unless the user purposefully messes with things.<br>
-It provides a really cool UI with a monitor and a KEYBOARD which gets typed when you type. (Not all keys are functional, try avoiding pressing useless buttons).
+The UI is smaller than Typeinc, but has enough features to be able to play and test your skills! 
+### What you have lesser here than Typeinc Original-
+1. Keyboard UI
+2. Display of top 5 scores, instead of top 10
 
 ## 2. Difficulty levels ![Static Badge](https://img.shields.io/badge/SO_HARD-red)
 
@@ -48,7 +52,7 @@ Here is a detailed summary of the Difficulty level division.
 All the difficulties levels are set by me, including the names. This test is a total 'BRUHHH'!<br>
 For example-
 <br>
-<img width="940" alt="higher_diff_txt-img" src="https://github.com/AnirudhG07/Typeinc/assets/146579014/72be858b-554a-44ce-830f-f12931233850">
+<img width="940" alt="higher_diff_txt-img" src="https://github.com/AnirudhG07/Typeinc-mini/assets/146579014/72be858b-554a-44ce-830f-f12931233850">
 
 This is an example of 50 word test-text at difficulty level = 20. (It may differ for you).
 
@@ -60,14 +64,14 @@ The grading system differs for each difficulty level chosen and so is your score
 more the score you will obtain.<br>
 Refer this tool to your friends, family and colleagues and compete with them!<br>
 
-Please refer to <a href="https://github.com/AnirudhG07/Typeinc/blob/main/docs/standards_grading.md"> Typeinc standards & grades </a> for more information regarding the grading and typeinc score.
+Please refer to <a href="https://github.com/AnirudhG07/Typeinc-mini/blob/main/docs/standards_grading.md"> Typeinc standards & grades </a> for more information regarding the grading and typeinc score.
 
-## 4. Highscore Display ![Static Badge](https://img.shields.io/badge/RANKS!-yellow)
+## 4. Highscore Display Typeinc-mini ![Static Badge](https://img.shields.io/badge/RANKS!-yellow)
 
-Save your result with your name for each test you take. You can also see the top 10 for each respective difficulty level by running the command - (Note: difficulty level is code for each difficulty level, like 'E', 'X2', etc.)
+Save your result with your name for each test you take. You can also see the top 5 for each respective difficulty level by running the command - (Note: difficulty level is code for each difficulty level, like 'E', 'X2', etc.)
 
 ```bash
-typeinc -r <difficulty-level>
+typeinc-mini -r <difficulty-level>
 ```
 
 The topper is the one with higher `Typeinc Score`.<br>
@@ -84,20 +88,20 @@ Follow the below guidelines to download the software
 1. You can install this package from PyPi by running the following command0
 
 ```bash
-pip install typeinc
+pip install typeinc-mini
 ```
 
 If it gives any permission error, you can run using `sudo`(for Unix).
 
 ```bash
-sudo pip install typeinc
+sudo pip install typeinc-mini
 ```
 
-2. Now you are good to go! Play by simply running typeinc by-
+2. Now you are good to go! Play by simply running typeinc-mini by-
 
 ```bash
-typeinc # to play
-typeinc -h # to see help message
+typeinc-mini # to play
+typeinc-mini -h # to see help message
 ```
 
 ## ~> Homebrew Installation
@@ -106,13 +110,13 @@ This tool can also be installed using Homebrew(for MacOS only). You can install 
 
 ```bash
 brew tap AnirudhG07/AnirudhG07
-brew install typeinc
+brew install typeinc-mini
 ```
 
-You can now run the tool by running `typeinc -h` in your terminal. If you are facing issues, try running-
+You can now run the tool by running `typeinc-mini -h` in your terminal. If you are facing issues, try running-
 
 ```bash
-brew install AnirudhG07/AnirudhG07/typeinc # After tapping the repo
+brew install AnirudhG07/AnirudhG07/Typeinc-mini # After tapping the repo
 ```
 
 Make sure you have Homebrew installed in your MacOS and it is updated which can be done by running `brew update`.
@@ -136,7 +140,7 @@ python setup.py install #use python3 if required
 pip install .
 ```
 
-Now you should be able to run the tool using `typeinc` in your terminal. Feel free to raise an issue if you face with any errors.
+Now you should be able to run the tool using `typeinc-mini` in your terminal. Feel free to raise an issue if you face with any errors.
 
 # Dependencies
 
@@ -144,16 +148,17 @@ This tool doesn't require a lot of dependencies but you need some basic requirem
 
 - python version >= 3.9
 - curses library of python (Note: It will be automatically installed if you use the Pip Installation process)
+- For Windows, windows-curses and setuptools are needed.
 
 If you have any doubts/facing any issue, feel free to raise an issue.
 
 # Documentation
 
-Check out the <a href ="https://github.com/AnirudhG07/Typeinc/tree/main/docs"> docs </a> in the repository for information regarding how to use, grading system, general queries, etc. Check out the help message in your terminal to check out the usage too ny running `typeinc -h`.
+Check out the <a href ="https://github.com/AnirudhG07/Typeinc-mini/tree/main/docs"> docs </a> in the repository for information regarding how to use, grading system, general queries, etc. Check out the help message in your terminal to check out the usage too ny running `typeinc-mini -h`.
 
 # Contribution
 
-It would be great to have contributions from anyone. To make Typeinc more loved among everyone and make it better, feel free to raise an issue, discuss and make a PR.
+It would be great to have contributions from anyone. To make Typeinc-mini more loved among everyone and make it better, feel free to raise an issue, discuss and make a PR.
 
 ### Contribution Guidelines
 

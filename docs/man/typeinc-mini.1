@@ -1,13 +1,13 @@
-.TH Cheatshh 1 "May 2024" "Typeinc Manual" "Typein Manual Page"
+.TH Cheatshh 1 "June 2024" "Typeinc-mini Manual" "Typein Manual Page"
 NAME
-    Typeinc - An amazing ncurses based Terminal UI for testing your typing speed on various difficulty levels with a cool.
+    Typeinc-mini - A miniature version of Typeinc, is an amazing ncurses based Terminal UI for testing your typing speed on various difficulty levels with a cool.
 
 SYNOPSIS
-    typeinc [OPTION]
-    typeinc -v, --version
+    typeinc-mini [OPTION]
+    typeinc-mini -v, --version
 
 DESCRIPTION
-    Tyepinc, an ncurses based tool, is your goto terminal tool to play around with your typing speed with various difficulty levels.
+    Tyepinc-mini, an ncurses based tool, a miniature version of Typeinc, is your goto terminal tool to play around with your typing speed with various difficulty levels.
     WPM is calculated by the internationally used methodology. You also get a Typeinc score based on the difficulty level, 
     wpm an accuracy you obtain. View top 10 highscore(local) for each difficulty level and challenge yourself/friends to beat it.
 
@@ -19,16 +19,16 @@ OPTIONS
     -w, --words
         To get random english words present in our wordlist.
     -r, --ranklist
-        Display the top 10 ranks of input difficulty level.
+        Display the top 5 ranks of input difficulty level.
 
 FILES
-    Typeinc uses English words taken from a `wordlist.txt` file with more tha 7500 English words.
+    Typeinc-mini uses English words taken from a `wordlist.txt` file with more tha 7500 English words.
     The UI and code handling is done in python using ncurses library.
     The configurations of result, testing text, UI, etc. are present in configurations directory.
 
 NOTES
-    Typeinc let's you test your typing speed, from regular to God level difficulty level, from difficulty
-    level of -infinity to +infinity. We provide a range of difficulty level based on which you are graded and
+    Typeinc-mini let's you test your typing speed, from regular to God level difficulty level, from difficulty
+    level of -infinity to +infinity, just like Typeinc. We provide a range of difficulty level based on which you are graded and
     given a score. 
     Here is a detailed summary of the Difficulty level division.
         - Level <= 0 : Super Easy (Regular) (SE)
@@ -45,29 +45,30 @@ NOTES
         - 1000 <= Level: GOD BRUH!!! (SXX)
     
     The grading system differs for each difficulty level chosen and so is your score. The higher the difficulty level,
-    more the score you will obtain. Visit the official Github page at https://github.com/AnirudhG07/Typeinc for understanding
+    more the score you will obtain. Visit the official Github page at https://github.com/AnirudhG07/Typeinc-mini for understanding
     the grading system for each difficulty level.
     
 EXAMPLES
-    To take the Typeinc test.
+    To take the Typeinc-mini test.
 
         $ typeinc
         
     To calcute a hypothetical Typeinc score, you would have to submit various values.
 
-        $ typeinc -s
+        $ typeinc-mini -s
 
     To get random english words from our wordlist.
 
-        $ typeinc -w <word_count>
+        $ typeinc-mini -w <word_count>
 
-    To display the top 10 ranks for input difficulty level.
+    To display the top 5 ranks for input difficulty level.
 
-        $ typeinc -r <difficulty_level>
+        $ typeinc-mini -r <difficulty_level>
     
 DEPENDENCIES
-    Tyepinc requires python version >= 3.9 and ncurses library present in your python version.
+    Tyepinc-mini requires python version >= 3.11 and ncurses library present in your python version.
+    For Windows, windows-curses and setuptools might also be needed. Rest are pre-installed libraries.
 
 AUTHOR
-    Typeinc was written by Anirudh Gupta.
-    Visit <https://github.com/AnirudhG07/Typeinc> for more information.
+    Typeinc-mini was written by Anirudh Gupta.
+    Visit <https://github.com/AnirudhG07/Typeinc-mini> for more information.
