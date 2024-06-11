@@ -161,6 +161,13 @@ If you have any doubts/facing any issue, feel free to raise an issue.
 
 Check out the <a href ="https://github.com/AnirudhG07/Typeinc-mini/tree/main/docs"> docs </a> in the repository for information regarding how to use, grading system, general queries, etc. Check out the help message in your terminal to check out the usage too ny running `typeinc-mini -h`.
 
+## Tldr 
+Thanks to maintainers at `tldr/tldr-pages`, we have English and Spanish tldr for typeinc, which is similar for typeinc-mini.
+<br>
+```bash
+$ tldr typeinc
+```
+
 # Contribution
 
 It would be great to have contributions from anyone. To make Typeinc-mini more loved among everyone and make it better, feel free to raise an issue, discuss and make a PR.
